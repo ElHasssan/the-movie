@@ -46,6 +46,11 @@ export default function Home() {
         </h2>
         {loading ? (
           <p className="text-zinc-400">جاري التحميل...</p>
+        ) : movies.length === 0 && search ? (
+          <div className="flex flex-col items-center justify-center py-32">
+            <p className="text-5xl mb-4">🎬</p>
+            <p className="text-xl text-zinc-400">هذا الفيلم أو المسلسل غير متوفر</p>
+          </div>
         ) : (
           <div className="grid grid-cols-3 gap-6">
             {movies.map((movie: any) => (
