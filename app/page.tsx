@@ -22,7 +22,7 @@ export default function Home() {
     <main className="min-h-screen bg-zinc-950 text-white">
       <nav className="bg-zinc-900 px-8 py-4 flex items-center justify-between border-b border-zinc-800">
         <h1 className="text-2xl font-bold text-yellow-400">The Movie</h1>
-        <div className="flex gap-6 text-zinc-400">
+        <div className="flex gap-6 text-zinc-200">
           <span className="hover:text-white cursor-pointer">أفلام</span>
           <span className="hover:text-white cursor-pointer">مسلسلات</span>
           <span className="hover:text-white cursor-pointer">قائمتي</span>
