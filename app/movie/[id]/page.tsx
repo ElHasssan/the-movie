@@ -19,8 +19,8 @@ export default function MoviePage() {
       <nav className="bg-zinc-900 px-8 py-4 border-b border-zinc-800">
         <h1 className="text-2xl font-bold text-yellow-400 cursor-pointer" onClick={() => window.location.href = '/'}>The Movie</h1>
       </nav>
-      <div className="flex gap-10 p-10">
-        <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} className="w-72 rounded-xl" />
+      <div className="flex flex-col md:flex-row gap-6 p-6">
+        <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} className="w-full md:w-72 rounded-xl" />
         <div>
           <h2 className="text-4xl font-bold mb-4">{movie.title}</h2>
           <div className="flex items-center gap-2 mb-4">
