@@ -23,11 +23,13 @@ export default function MoviePage() {
         <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} className="w-full md:w-72 rounded-xl" />
         <div>
           <h2 className="text-4xl font-bold mb-4">{movie.title}</h2>
-          <div className="flex items-center gap-2 mb-4">
-            <span className="text-yellow-400 text-2xl">★</span>
-            <span className="text-yellow-400 text-2xl font-bold">{movie.vote_average?.toFixed(1)}</span>
-            <span className="text-zinc-500">/10</span>
-          </div>
+          <div className="flex items-center gap-1">
+  <span className="text-yellow-400 text-2xl">★</span>
+  <span className="text-yellow-400 text-2xl font-bold">
+    {movie.vote_average?.toFixed(1)}
+  </span>
+  <span className="text-zinc-500">/10</span>
+</div>
           <p className="text-zinc-400 text-lg leading-relaxed max-w-2xl">{movie.overview}</p>
         </div>
       </div>
